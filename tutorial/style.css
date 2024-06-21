@@ -43,3 +43,39 @@ nav .menu a:hover{
     background:white;
     border-radius: .7rem;
 }
+.f1{
+    margin: 2rem;
+    padding:10px ;
+    font-size: 1rem;
+    background-color: rgb(6, 2, 54);
+    color: white;
+    border-radius: .4rem;
+    border:none;
+    cursor: pointer;
+    transition: all 3ms ease;
+}
+.f1:hover{
+    color: green;
+    background-color: rgb(148, 211, 245);
+    transform: scale(1.1);
+    box-shadow: 10px 10px 5px 2px #0c0303cc;
+}
+/*--------------------------------------------------------*/
+.f2 {
+    border: none;
+    background: none;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    transition: color 500ms;
+    overflow: hidden;
+}
+.f2:hover {
+    color: rgb(255, 255, 255);
+}
+
+.f2:hover::after {
+    bottom: 0;
+}

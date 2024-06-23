@@ -1,32 +1,36 @@
 *
 {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     transition: all 3ms ease;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-html{
+
+html
+{
     scroll-behavior: smooth;
 }
-section
-{
-    width:100%;
-    height: auto;
 
-}
-header{
+section 
+{
     width: 100%;
     height: auto;
-    background-color: rgb(16, 2, 62);
-    flex-direction: column;
-    justify-content: center;
+}
+
+header
+{
+    width: 100%;
+    height: auto;
+    /* height: 14vh; */
+    background-color: rgb(0, 0, 62);
     display: flex;
-    color: #fff;
+    flex-direction: column;
     /* align-items: center; */
-    /* padding: 1rem 8rem; */
+    justify-content: center;
+    color: #fff;
 }
 .nav-logo
 {
@@ -35,40 +39,347 @@ header{
     justify-content: space-between;
     color: #fff;
 }
+
 .nav-logo a
 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 3.2rem;
+    /* margin-right: 15rem; */
 }
-.nav-logo .locate{
-    display: flex;
+.nav-logo .locate
+{
     padding: 10px;
+    display: flex;
     flex-direction: column;
 }
-.nav-links
+
+.navlinks
 {
     padding: 1rem 6rem;
     background-color: #fff;
 }
-.nav-links a{
-    color: #040202;
-    padding: 1rem  2rem;
+.navlinks a
+{
+    color: #000000;
+    padding:  1rem 2rem;
 }
-/* <-------------------------------------home */
-.home{
+
+/*-------------home-----------------*/
+.home
+{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
-    align-items: center;
-    height: 80vh;
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('https://images.pexels.com/photos/733993/pexels-photo-733993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url('images/back1.jpeg');
+    height: 82vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
 }
+
 .home h3
 {
+    font-size: 2rem;
+    font-weight:lighter;
+
+}
+.home h1
+{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.locate span input {
+    border: 0.5px solid #fff;
+    border-radius: 2px;
+    width: 10em;
+}
+
+/*---------tours---------------*/
+
+
+.tours
+{
+    width: 100%;
+    height: 100vh;
+    padding: 3rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+}
+
+.tour-places
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     
 }
+.tour-places h1
+{
+    font-size: 2.3rem;
+}
+.tour-places p
+{
+    font-size: 1.2rem;
+}
+
+.card-container
+{
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.card
+{
+    width: 25%;
+    height: auto;
+    background-color: #e1e1e1;
+    color: #000;
+}
+
+.card img 
+{
+    width: 100%;
+    height: 200px;
+} 
+
+
+.card span 
+{
+    /* background-color: #d0d0d0; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.2rem;
+} 
+.card span P 
+{
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+}
+
+/*---------ABOUT US---------------------*/
+
+.about 
+{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url('images/back2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+
+}
+.about .heading{
+    margin: 2% auto;
+}
+.about .heading h1
+{
+    font-size: 2rem;
+}
+.about .heading p
+{
+    font-size: 1.5rem;
+}
+.about-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 10%;
+    gap: 2rem;
+}
+.about-card
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: center;
+
+}
+.about-card h1
+{
+    margin: 20px 5px 5px;
+    font-size:1.5rem;
+}
+.about-card p
+{
+    /* text-align: justify; */
+    margin: 15px 5px;
+    font-size:1.3rem;
+}
+.about-card div
+{
+    background-color: #ffffff;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+.about-card div i
+{
+    color: #ffd12a;
+    font-size: 3rem;
+   
+}
+
+
+/* <-----------------------------------------second-part-----------------------
+*/
+
+
+
+
+.test
+{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:rgb(72, 71, 71);
+    text-align: center;
+
+}
+.test .test-heading{
+    margin: 2% auto;
+}
+.test .test-heading h1
+{
+    font-size: 2rem;
+}
+.test .test-heading p
+{
+    font-size: 1.5rem;
+}
+.test-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10%;
+    gap: 2rem;
+}
+.test-card
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: center;
+
+}
+.test-card p
+{
+    margin: 10px 5px;
+    font-size:1.3rem;
+}
+.test-card h1
+{
+    text-align: justify;
+    margin: 15px 5px;
+    color: #f4ba29;
+    font-size:1.3rem;
+}
+
+.test-card div i
+{
+    color: #cacaca;
+    font-size: 5rem;
+   
+}
+
+/* <------------------footer-------------------------------------> */
+
+
+.footer
+{
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(10, 10, 71);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:#b0e1f4;
+    text-align: center;
+    /* padding: 1rem; */
+}
+.footer .one{
+    display: flex;
+}
+.footer .one a ,.footer .one p
+{
+    color:#b0e1f4;
+    font-size: 1.1rem;
+    padding: 0 .5rem;
+}
+
+.footer .two 
+{
+    font-size: 1.1rem;
+    display: flex;
+}
+.footer .two p{
+    
+    padding: 0 .5rem;
+}
+.footer .two p span{
+    
+color: #ffffff;
+font-size: 1.2rem;
+}
+
+.footer .social 
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: .5rem;
+}
+.footer .social div
+{
+    background-color: #ffffff;
+    width: 2rem;
+    height:2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: .4rem;
+    /* padding: 2rem; */
+
+}
+.footer .social div i
+{
+    /* padding: ; */
+    color: rgb(10, 10, 71);
+    font-size: 1.2rem;
+   
+}
+
